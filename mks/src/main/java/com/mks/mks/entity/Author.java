@@ -20,7 +20,7 @@ public class Author {
     private int id;
 
     @Column(name = "name")
-    private String name;
+    private String authorName;
 
     @Column(name = "surname")
     private String surname;
@@ -47,7 +47,7 @@ public class Author {
     }
 
     public Author(String name, String surname) {
-        this.name = name;
+        this.authorName = name;
         this.surname = surname;
     }
 
@@ -55,12 +55,12 @@ public class Author {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getAuthorName() {
+        return authorName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
     }
 
     public String getSurname() {

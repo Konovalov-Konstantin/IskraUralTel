@@ -24,7 +24,7 @@ class BookRepositoryTest {
     @Test
     void shouldReturnBookByTitle() {
         Book bookByTitle = bookRepository.findBookByTitle("Последний из могикан");
-        assertEquals("Джеймс", bookByTitle.getAuthor().getName());
+        assertEquals("Джеймс", bookByTitle.getAuthor().getAuthorName());
         assertEquals("Купер", bookByTitle.getAuthor().getSurname());
     }
 

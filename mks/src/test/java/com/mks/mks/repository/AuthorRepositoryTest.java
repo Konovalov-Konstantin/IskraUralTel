@@ -24,6 +24,6 @@ class AuthorRepositoryTest {
     @Test
     void shouldReturnAuthorBySurname () {
         Author authorBySurname = authorRepository.findAuthorBySurname("Толстой");
-        assertEquals("Лев", authorBySurname.getName());
+        assertEquals("Лев", authorBySurname.getAuthorName());
     }
 }
